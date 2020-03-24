@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/matchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--        android:text="@string/match_title"-->
+
+    <TextView
+        android:id="@+id/matchDateString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchTitle" />
+<!--        android:text="@string/date"-->
+
+    <ImageView
+        android:id="@+id/choiceComputer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchDateString"
+        />
+<!--        app:srcCompat="@drawable/rock"-->
+
+    <ImageView
+        android:id="@+id/choiceUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchDateString"
+        />
+<!--        app:srcCompat="@drawable/rock"-->
+
+    <TextView
+        android:id="@+id/versus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/middle_string"
+        app:layout_constraintBottom_toBottomOf="@+id/choiceUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/choiceComputer"
+        />
+
+    <TextView
+        android:id="@+id/userComputerString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/computer"
+        app:layout_constraintEnd_toEndOf="@+id/choiceComputer"
+        app:layout_constraintStart_toStartOf="@+id/choiceComputer"
+        app:layout_constraintTop_toBottomOf="@+id/choiceComputer" />
+
+    <TextView
+        android:id="@+id/userUserString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you"
+        app:layout_constraintEnd_toEndOf="@+id/choiceUser"
+        app:layout_constraintStart_toStartOf="@+id/choiceUser"
+        app:layout_constraintTop_toBottomOf="@+id/choiceUser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

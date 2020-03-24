@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.simon.rockpaperscissors.ui.HistoryActivity">
+    <item
+        android:id="@+id/remove_history"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="100"
+        android:title="@string/clear_history"
+        app:showAsAction="ifRoom" />
+</menu>
